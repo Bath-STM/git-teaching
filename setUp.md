@@ -2,7 +2,7 @@
 
 ## GitHub
 
-Please either check you can login or set up a [GitHub](https://github.com/) account. We will use this host during the session to work with an example remote repository. I suggest you use an email you can take with you should you leave Bath.
+Please either check you can log in or set up a [GitHub](https://github.com/) account. We will use this host during the session to work with an example remote repository. I suggest you use an email you can take with you should you leave Bath.
 
 ## Git Installation & Verification
 
@@ -34,7 +34,7 @@ git version 2.x.x
 ```
 
 - Git is already installed  
-- No need to reinstall, but never a bad idea to update to update to the most recent release
+- No need to reinstall, but never a bad idea to update to the most recent release
 - **Windows:** confirm that Git Bash is available  
 - **macOS / Linux:** proceed to configuration in Section 3
 
@@ -56,13 +56,13 @@ In this case, follow the instructions below for your OS.
 
 #### 2.1 Windows
 
-The simplist way to download git is to go to the official Git for Windows [download page](https://git-scm.com/download/win).
+The simplest way to download git is to go to the official Git for Windows [download page](https://git-scm.com/download/win).
 
-This distribution is known as Git for Windows and is technically a separate community project from git itself but is well maintained. It also contains git bash which is where we will interact with git from.
+This distribution is known as Git for Windows and is technically a separate community project from git itself but is well maintained. It also contains **Git Bash** which is where we will interact with git from.
 
-Most of the defualt install options are sensible or certainly should be kept.
+Most of the default install options are sensible or certainly should be kept.
 
-If you have strong text editor preferences you may wish to change that (defualt Vim is fine).
+If you have strong text editor preferences you may wish to change that (default Vim is fine).
 
 I do suggest you **change the default initial branch name** to "main" which is the suggested override option when that window comes up.
 
@@ -84,11 +84,11 @@ you have successfully installed git and Git Bash.
 
 #### 2.2 macOS
 
-Again there are several ways to go about this (git even comes as defualt on many macs) but the recommended way is to try to run git from the terminal (e.g. `git --version`).
+Again there are several ways to go about this (git even comes as default on many macs) but the recommended way is to try to run git from the terminal (e.g. `git --version`).
 
-If this command is not found it wil prompt you to install the Xcode Command Line Tools which are useful and comes with git.
+If this command is not found it will prompt you to install the Xcode Command Line Tools which are useful and comes with git.
 
-It is also possbile to use a more specific installer (e.g. the hombrew package manager). Intsructions for this may be found [here](https://git-scm.com/install/mac).
+It is also possible to use a more specific installer (e.g. the hombrew package manager). Instructions for this may be found [here](https://git-scm.com/install/mac).
 
 **Verify your install:**
 
@@ -108,7 +108,7 @@ you have successfully installed git.
 
 #### 2.3 Linux
 
-The package management tool on your linux system will suffice to download git. For a Fedora or similar system (e.g. ContOS) use `dnf`,
+The package management tool on your Linux system will suffice to download git. For a Fedora or similar system (e.g. CentOS) use `dnf`,
 
 ```bash
 dnf install git-all
@@ -117,7 +117,7 @@ dnf install git-all
 while for a Debian based system (i.e. Ubuntu) use `apt`
 
 ```bash
-apt-get install git
+sudo apt-get install git
 ```
 
 Further options with specifics for different distributions are available [here](https://git-scm.com/install/linux).
@@ -140,15 +140,16 @@ you have successfully installed git.
 
 ### Configuration
 
-Before we go agead and use git its useful to configure the details you would like used in commit mesaages. The `config` command sets these parameters via `git config --global <key> <value>`. git options can be configured globally (--global) or locally
-in a repository (--local). Initally I suggest setting the below two options.
+Before we go ahead and use git it's useful to configure the details you would like used in commit messages. The `config` command sets these parameters via `git config --global <key> <value>`. git options can be configured globally (--global) or locally
+in a repository (--local). Initially I suggest setting the below two options.
 
 ```bash
-git config --global user.name “Paul Dirac”
-git config --global user.email “paul@grumpygenius.com”
+git config --global user.name "Paul Dirac"
+git config --global user.email "paul@grumpygenius.com"
 ```
 
-Their correct settign can be checked by
+Their correct setting can be checked by
+
 ```bash
 git config --global -l
 ```
